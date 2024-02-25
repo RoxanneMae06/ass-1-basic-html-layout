@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #0030cf;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background-color: #2ecc71;
+            color: black; /* Change font color to black */
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; /* Change font color to black */
+            font-weight: bold;
+            font-size: 16px;
+        }
+        section {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        main {
+            flex: 2;
+            padding: 10px;
+            background-color: #ecf0f1;
+            text-align: center; /* Center the text within the main content */
+            margin-right: 5px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 10px;
+            background-color: #f521a4;
+            color: white;
+            margin-left: 5px;
+        }
+
+        aside.left {
+            order: -1;
+            background-color: #c14af0;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to K-Language Hub</h1>
+        <p>Your Gateway to Korean Language and Culture</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside class="left">
+            <h2>한국어 배우기 - Learn Korean</h2>
+            <p>
+                <strong>Useful Phrases:</strong>
+                <br>
+                Learn common Korean phrases for daily conversations. <a href="useful-phrases">Explore</a>.
+            </p>
+            <p>
+                <strong>Grammar Tips:</strong>
+                <br>
+                Discover brief grammar explanations and tips for learners. <a href="grammar-tips">Read more</a>.
+            </p>
+            <p>
+                <strong>Word of the Day:</strong>
+                <br>
+                Introduce a new Korean word each day. <a href="word-of-the-day">Discover</a>.
+            </p>
+        </aside>
+
+        <main>
+            <h2>Unlock the Beauty of the Korean Language</h2>
+            <p>
+                At K-Language Hub, we offer an immersive learning experience to help you master the art of Korean communication. Whether you're a beginner or looking to enhance your skills, our courses and resources are designed to make your learning journey enjoyable and enriching.
+            </p>
+            <p>
+                Explore our curated lessons, practice with native instructors, and embark on a language adventure with us. Let's discover the wonders of the Korean language together!
+            </p>
+        </main>
+
+        <aside>
+            <h2>Discover Korean Culture</h2>
+            <p>
+                <strong>Korean Cuisine Showcase:</strong>
+                <br>
+                Explore different Korean dishes with recipes and cooking tips. <a href="korean-cuisine">Discover</a>.
+            </p>
+            <p>
+                <strong>K-Drama Recommendations:</strong>
+                <br>
+                Check out popular and culturally significant Korean dramas. <a href="k-drama-recommendations">Explore</a>.
+            </p>
+            <p>
+                <strong>Virtual Tour of Korea:</strong>
+                <br>
+                Showcase virtual tours of famous Korean landmarks. <a href="virtual-tour">Start tour</a>.
+            </p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KoreanLanguageHub. All rights reserved. | Designed by Roxanne Mae Bandivas</p>
+    </footer>
+
+</body>
+</html>
